@@ -1,0 +1,17 @@
+#!/bin/sh
+# Skeleton pre-commit — thin wrapper. La logica coi denti è in guards.py.
+#
+# Attiva una volta (dalla root del nuovo repo):
+#   git config core.hooksPath .githooks
+#   # unix/mac: chmod +x .githooks/pre-commit
+#
+# guards.py: secret-scan (BLOCCA) · ref-check (BLOCCA) · main-warn.
+
+if command -v python3 >/dev/null 2>&1; then
+  PY=python3
+else
+  PY=python
+fi
+
+"$PY" .githooks/guards.py "$@"
+exit $?

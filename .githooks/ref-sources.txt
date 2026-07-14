@@ -1,0 +1,4 @@
+# File-sorgente di cui il ref-check verifica i puntatori .md (uno per riga).
+# COMMITTATO apposta: così il gate è vivo in OGNI shell/GUI, non in un export effimero.
+# Aggiungi qui i tuoi file auto-caricati man mano (es. il tuo indice-biblioteca, lo STATO).
+CLAUDE.md
